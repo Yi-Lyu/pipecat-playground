@@ -153,8 +153,8 @@ async def main():
             },
         ]
 
-        user_response = LLMUserResponseAggregator()
-        assistant_response = LLMAssistantResponseAggregator()
+        user_response = LLMUserResponseAggregator(messages)
+        assistant_response = LLMAssistantResponseAggregator(messages)
 
         ta = TalkingAnimation()
 
